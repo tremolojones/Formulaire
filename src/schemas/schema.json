@@ -1,0 +1,29 @@
+
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Nom"
+    },
+    "countries": {
+      "type": "array",
+      "title": "Pays et Pourcentages",
+      "items": {
+        "type": "object",
+        "properties": {
+          "country": {
+            "type": "string",
+            "title": "Pays"
+          },
+          "percentage": {
+            "type": "number",
+            "title": "Pourcentage"
+          }
+        },
+        "required": ["country", "percentage"]
+      }
+    }
+  },
+  "required": ["name"]
+}
